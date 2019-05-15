@@ -53,7 +53,7 @@ pipeline {
       GNUARMEMB_TOOLCHAIN_PATH = '/workdir/gcc-arm-none-eabi-7-2018-q2-update'
 
       // Projects to trigger after this one is built
-      DOWNSTREAM_PROJECTS = credentials('fw-nrfconnect-nrf-jobs')
+      DOWNSTREAM_PROJECTS = "Bootloader/test-fw-nrfconnect-mcuboot/master/" //credentials('fw-nrfconnect-nrf-jobs')
   }
 
   stages {
